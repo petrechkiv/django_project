@@ -21,3 +21,7 @@ def portfolio_view(request):
 def register_view(request):
     form = RegisterForms()
     return render(request, 'my_django_project/register.html', {'form': form})
+
+
+def base_view(request):
+    return render(request, 'my_django_project/base.html')
