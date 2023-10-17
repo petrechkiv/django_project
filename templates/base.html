@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+  <title>Personal Block</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href='my_django_project/admin.html'>Admin</a></li>
+        <li><a href='my_django_project/portfolio.html'>Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
