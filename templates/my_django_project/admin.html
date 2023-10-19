@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Страница администрирования</title>
-</head>
-<body>
-    {% extends 'base.html' %}
+{% extends 'my_django_project/base.html' %}
 
-    {% block content %}
-        <div class="container">
-         <h2>Admin page</h2>
-            <!-- Здесь вы можете добавить дополнительный контент для страницы администрирования -->
-        </div>
-    {% endblock %}
-</body>
-</html>
+{% block content %}
+  <div class="container">
+    <h2>Admin page</h2>
+<!-- Здесь вы можете добавить дополнительный контент для страницы администрирования -->
+  </div>
+{% endblock %}

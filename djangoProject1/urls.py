@@ -17,11 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from my_django_project.views import login_view
-from my_django_project.views import portfolio_view
-from my_django_project.views import register_view
+from my_django_project import tests_views
+from my_django_project.tests_views import login_view, base_view
+from my_django_project.tests_views import portfolio_view
+from my_django_project.tests_views import register_view
 
 urlpatterns = [
+    path('', base_view, name='base'),
     path('admin/', admin.site.urls),
     path('login/', login_view, name='login'),
     path('portfolio/', portfolio_view, name='portfolio'),
