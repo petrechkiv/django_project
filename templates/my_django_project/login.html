@@ -6,9 +6,9 @@
     <img src="{% static 'images/logo.png' %}" alt="Logo" class="logo">
     <form method="post" class="form-group">
       {% csrf_token %}
-      {{ form }}
+      {{ form.as_p }}
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
-    <p>Нет аккаунта? <a href="{% url 'register' %}">Регистрация</a></p>
+    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
   </div>
 {% endblock %}

@@ -1,8 +1,29 @@
 {% extends 'my_django_project/base.html' %}
+{% load static %}
 
 {% block content %}
   <div class="container">
     <h2>Portfolio page</h2>
     <!-- Здесь вы можете добавить примеры ваших работ или другой контент для страницы портфолио -->
+        <table border="4">
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Image</th></tr>
+        <tr>
+            <td>Apu Gora</td>
+            <td>India</td>
+            <td><img src="{% static 'images/portfolio1.jpg' %}" alt="Logo" height="100" width="100"></td></tr>
+            <tr>
+                <td>Apu Gora</td>
+                <td>India</td>
+                <td><img src="{% static 'images/portfolio2.jpg' %}" alt="Logo" height="100" width="100"></td>
+            </tr>
+        <tr>
+            <td>Apu Gora</td>
+            <td>India</td>
+            <td><img src="{% static 'images/portfolio3.jpg' %}" alt="Logo" height="100" width="100"></td>
+        </tr>
+</table>
   </div>
 {% endblock %}
