@@ -1,6 +1,5 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm, UserModel
-from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
@@ -19,11 +18,6 @@ def admin_view(request):
     return render(request, 'my_django_project/admin.html')
 
 
-def portfolio_view(request):
-    return render(request, 'my_django_project/portfolio.html')
-
-
-@login_required
 def portfolio_view(request):
     return render(request, 'my_django_project/portfolio.html')
 
