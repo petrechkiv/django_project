@@ -23,10 +23,11 @@ from my_django_project.tests_views import portfolio_view
 from my_django_project.tests_views import register_view
 
 urlpatterns = [
-    path('', base_view, name='base'),
-    path('admin/', admin.site.urls),
+    #path('login/', include('django.contrib.auth.urls')),
+    #path('', base_view, name='base'),
     path('login/', login_view, name='login'),
+    path('', login_view, name='login'),
+    path('admin/', admin.site.urls),
     path('portfolio/', portfolio_view, name='portfolio'),
     path('register/', register_view, name='register'),
-    #path('login/', include('django.contrib.auth.urls')),
 ]

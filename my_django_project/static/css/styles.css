@@ -7,7 +7,8 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #FFF;
@@ -17,7 +18,8 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
-  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 .form-group {
